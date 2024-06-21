@@ -23,25 +23,7 @@
   .experience-details-container {
     margin-top: 2rem;
   }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
+ 
   .about-containers {
     margin-top: 0;
   }
@@ -65,6 +47,7 @@
     font-size: 1rem;
   }
   footer nav {
+    margin-top: 10vh;
     height: fit-content;
     margin-bottom: 2rem;
   }
@@ -114,12 +97,16 @@
     flex-direction: column;
     margin-bottom: 10vh;
     width: 90vw;
+    align-items: center;
   }
   .card{
   
     width: 80vw;
     margin: 0;
     margin-top: 3vh;
+  }
+  .card a{
+    width: 26vw;
   }
   .article-container {
 
@@ -129,7 +116,40 @@
     width: 24vw;
     font-size: 2vh;
   }
+  #profile,
+  .section-container {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 275px;
+    max-height: 275px;
+    
+    
+  }
+  #profile .section__pic-container img{
+   
+    max-width: 275px;
+    max-height: 275px;
+  }
   
-
+  
 }

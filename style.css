@@ -68,7 +68,7 @@ a:hover {
 .logo {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 900;
   font-style: oblique;
   font-size: 3rem;
 }
@@ -176,6 +176,7 @@ section {
 #profile {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   gap: 5rem;
   height: 80vh;
 }
@@ -370,6 +371,8 @@ article {
   justify-content: space-around;
   gap: 0.5rem;
   margin-top: 2vh;
+  flex-shrink: 9w;
+  margin-left: 1vh;
 }
 article div h3{
 
