@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Joseph Paul</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Joseph Paul</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Joseph Paul</h1>
+        <p class="section__text__p2">web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button> 
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/joseph-paul-780485253'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Josephpaul07/Josephpaul07'"
+          />
+          <img
+            src="./assets/email.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.location.href='mailto:josephpallathukudy@gmail.com'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://www.instagram.com/itsme_josephpaul/')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <!-- <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>--> 
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              I am an aspiring web developer pursuing a Master Computer Science in Christ (Deemed to be university) Banglore, with expertise in front-end technologies, database management,c lang ,pyhton and Java. Passionate about building scalable web applications, I excel in collaborative environments where dynamic teams solve real-world issues. My academic
+              background provides the theoretical knowledge and practical skills needed for complex web development. Proficient in both back-end and front-end technologies, I contribute effectively to all stages of development. Committed to continuous learning and staying updated with industry trends, I aim to deliver innovative and efficient solutions. 
+              Eager to leverage my skills and passion professionally, 
+              I am dedicated to making a meaningful impact in web development.
+            </p>
+          </div>
+          <div class="about-containers">
+  
+            <div class="details-container">
+              <div class="head-ed-container">
+                <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h2>Education</h2>
+              </div>
+              <p>Master of Computer Application(Christ Deemed to be university ,Banglore)</p>
+              <p>Bachelor of Computer Application(M G university)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Journey</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                 
+                </div>
+              </article>
+
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C Lang</h3>
+                 
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mysql</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>git</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  
+                </div>
+              </article>
+
+              </article>
+
+            </div>
+          </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+
+        <!-- //projcts..............................// -->
+        <section class="project-container">
+
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Projects</h1>
+  
+          <div class="project-card-container">
+            
+            <div class="card">
+              <h1 class="card-title">HospMate</h1>
+              <p class="desc"> Our platform connects patients and families with bystanders and hospitals, 
+                allowing profile creation, service search, and appointment booking. 
+                Hospitals and bystanders manage profiles, availability, and services. 
+                Secure payments and a user-friendly interface ensure convenience and safety, 
+                addressing healthcare demands efficiently and effectively</p>
+              <a href="http://" target="_blank">github</a>
+            </div>
+  
+            <div class="card">
+              <h1 class="card-title">Salon management</h1>
+              <p class="desc">Effortlessly manage  salon with our innovative salon management system,
+                 designed to streamline appointments, inventory, and staff scheduling. Enhance customer experience, 
+                 boost efficiency, and drive business growth with our user-friendly, all-in-one solution,
+                  tailored to meet the unique needs of modern salons.
+                 Transform your salon operations today with our cutting-edge software.</p>
+              <a href="http://" target="_blank">github</a>
+            </div>
+  
+            <div class="card">
+              <h1 class="card-title"> Storage optimization in CCTV</h1>
+              <p class="desc">The  project  approach to optimize CCTV storage and 
+                analysis using motion-based frame removal via Python’s OpenCV library. 
+                This method reduces storage needs while maintaining critical data, enhances efficiency,
+                 and improves usability, offering significant advancements in CCTV surveillance 
+                 systems and fostering further innovation in the field.</p>
+              <a href="http://" target="_blank">github</a>
+            </div>
+  
+          </div>
+  
+        </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:josephpallathukudy@gmail.com">josephpallathukudy@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/joseph-paul-780485253">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Joseph Paul. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
